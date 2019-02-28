@@ -1,0 +1,166 @@
+#footer {
+    background-color: rgb(255, 255, 255); /* Цвет фона веб-страницы */
+    color: #757373; /* Цвет основного текста */
+    width: 40%;
+    height: 8%;
+    margin-left : 29%;
+    margin-bottom: 1%;
+    bottom: 2px;
+    position: fixed;
+    font-family: Arial, Verdana, Sans-serif; /* Семейство шрифтов */
+    font-size: 15px; /* Размер основного шрифта в пунктах */
+    
+    border-radius: 5px;
+    vertical-align: bottom;
+}
+
+
+#header{
+    color: #757373; /* Цвет основного текста */
+    width: 40%;
+    margin-left: 29%;
+    margin-top: 1%;
+    font-family: Arial, Verdana, Sans-serif; /* Семейство шрифтов */
+    font-size: 15px; /* Размер основного шрифта в пунктах */
+    height: 85%;
+    overflow: hidden;
+    z-index: 1;
+    display: flex;
+    display: -webkit-flex; 
+    flex-direction: column-reverse;
+    -webkit-flex-direction: column-reverse;
+}
+#container{
+    overflow: auto;
+    overflow-x: hidden;
+    height: auto;
+    
+    width: 100%;
+    position: relative;
+    border-width: 2px;
+    border-color: black;
+    font-family: Arial, Verdana, Sans-serif; /* Семейство шрифтов */
+    font-size: 15px; /* Размер основного шрифта в пунктах */
+    padding-right: 10px;
+    margin-bottom: 0px;
+    height: 100%;
+    display: flex;
+    display: -webkit-flex; 
+    flex-direction: column;
+    -webkit-flex-direction: column;
+    z-index: 2;
+}
+button{
+    float:right;
+    border-radius: 0px;
+    border: 1px solid;
+    font: menu;
+    background-color: rgb(107, 194, 85);
+    color: white;
+    margin: 8px;
+    margin-top: 12px;
+    padding: 4px 7px 4px 6px;
+
+}
+input{
+    position: fixed;
+    float: left;
+    height: 45px;
+    display: block;
+    margin-top: 0px;
+    border:0px;
+    padding-left: 5px;
+    width: 29%;
+    height: 8%;
+    font-family: Arial, Verdana, Sans-serif; /* Семейство шрифтов */
+    font-size: 18px;
+    color: #757373;
+}
+.ticket{
+    color: #757373; /* Цвет основного текста */
+    width: 100%;
+    margin-left: 0;
+    position: relative;
+    font-family: Arial, Verdana, Sans-serif; /* Семейство шрифтов */
+    outline: 1px solid rgb(255, 255, 255);
+    padding-right: 20px;
+    margin-top: 0px;
+    height: 100px;
+
+}
+.color{
+    float: right;
+    margin-top: 15px;
+    width: 20px;
+    height: 20px;
+    border-radius: 3px;
+    margin-right: 5px;
+    position: relative;
+}
+.color1 {
+    background-color: rgb(250, 141, 141);
+}
+.color2 {
+    background-color:rgb(128, 213, 241);
+}
+.color3 {
+    background-color: rgb(245, 192, 1);
+}
+.color4 {
+    background-color: rgb(141, 224, 141)
+}
+.color5 {
+    background-color: rgb(179, 133, 224);
+}
+.point{
+    background-color: white;
+    margin-left:40px;
+    width: 20px;
+    height: 20px;
+    top: 39px;
+    border: 1px solid #ffffff;
+    position: absolute;
+}
+
+.selected{
+    border-color: white;
+    border-width: 2px;
+    border-style: ridge;
+}
+.circle{
+    background-color: rgb(205, 207, 89);
+    width: 20px;
+    height: 20px;
+    border: 1px solid #b7b7b7;
+    border-radius: 10px;
+    
+}
+table{
+    margin-left: 99px;
+    margin-top:0;
+    height: 100px;
+    border-spacing: 0;
+    padding-right: 5%;
+    padding-left: 5%;
+    border-left: 1px solid  #ffffff;
+}
+td{
+    margin-left: 5%;
+    
+    vertical-align:middle; /* выравнивание текста по вертикали css*/
+}
+
+p{
+    
+    font-size: 20px; /* Размер основного шрифта в пунктах */
+    text-align: center;
+    color: white;
+	vertical-align:middle;
+}
+body{
+    padding: 0;
+    margin: 0;
+    background-color: rgb(241, 232, 225);
+    
+}
+
