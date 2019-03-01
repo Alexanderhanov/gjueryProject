@@ -1,58 +1,69 @@
 const white = "rgb(255, 255, 255)";
-
+function buttonClick(e) {
+    let TicketText = $("#enter").val().trim();
+    if (TicketText === '') {
+        return false;
+    }
+    
+    function getRandomInt(min, max) {
+        // использование Math.round() даст неравномерное распределение!
+        return Math
+        .floor(Math
+            .random() * (max - min + 1)) + min;
+    }
+    let int = getRandomInt(1, 5);
+    let chooseColor;
+    switch (int) {
+        case 1:
+        chooseColor = "color1";
+            break;
+        case 2:
+        chooseColor = "color2";
+            break;
+        case 3:
+        chooseColor = "color3";
+            break;
+        case 4:
+        chooseColor = "color4";
+            break;
+        case 5:
+        chooseColor = "color5";
+            break;
+    }
+    
+    
+    if ($("#one").css("border-color") === white) chooseColor  = "color1";
+    if ($("#two").css("border-color") === white) chooseColor  = "color2";
+    if ($("#three").css("border-color") === white) chooseColor  = "color3";
+    if ($("#four").css("border-color") === white) chooseColor  = "color4";
+    if ($("#five").css("border-color") === white) chooseColor  = "color5";
+    $("#container")
+    .prepend('<div class="' + chooseColor  + ' ticket"><table><tr><td><p>' + TicketText 
+    + '</p></td></tr></table><input type="checkbox" class="point" /></div>');
+    $('input').val('');
+    return false;
+}
 $(document).ready(function () {
 
-    $("button").click(function () {
-
-        let TicketText = $("#enter").val();
-        if (TicketText==='') {
-            return false;
-        }
+    $("button").click( function(e) {
+        buttonClick(e);
+        $('#enter').focus();
+    } );
+    $('input').keypress(function(e) {
         
-        function getRandomInt(min, max) {
-            // использование Math.round() даст неравномерное распределение!
-            return Math
-            .floor(Math
-                .random() * (max - min + 1)) + min;
+        if(e.which === 13) {
+            e.preventDefault();  
+            buttonClick();
+            $('#enter').focus();
         }
-        let int = getRandomInt(1, 5);
-        let chooseColor;
-        switch (int) {
-            case 1:
-            chooseColor = "color1";
-                break;
-            case 2:
-            chooseColor = "color2";
-                break;
-            case 3:
-            chooseColor = "color3";
-                break;
-            case 4:
-            chooseColor = "color4";
-                break;
-            case 5:
-            chooseColor = "color5";
-                break;
-        }
-        
-        
-        if ($("#one").css("border-color") === white) chooseColor  = "color1";
-        if ($("#two").css("border-color") === white) chooseColor  = "color2";
-        if ($("#three").css("border-color") === white) chooseColor  = "color3";
-        if ($("#four").css("border-color") === white) chooseColor  = "color4";
-        if ($("#five").css("border-color") === white) chooseColor  = "color5";
-        $("#container")
-        .prepend('<div class="' + chooseColor  + ' ticket"><table><tr><td><p>' + TicketText 
-        + '</p></td></tr></table><input type="checkbox" class="point" /></div>');
-        $('input').val('');
-        return false;
     });
-
 });
 
 $(document).ready(function () {
+    $('#enter').focus();
     $('body').on('click', '.point', function () {
         if ($(".point").is(':checked')) {
+            $('.selected').removeClass('selected');
             $('#one,#two,#three,#four,#five').click(function () {
 
                 if ($("#one").css("border-color") === white) {
