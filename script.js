@@ -38,7 +38,7 @@ $(document).ready(function () {
         if ($("#four").css("border-color") === white) chooseColor  = "color4";
         if ($("#five").css("border-color") === white) chooseColor  = "color5";
         $("#container")
-        .append('<div class="' + chooseColor  + ' ticket"><table><tr><td><p>' + TicketText 
+        .prepend('<div class="' + chooseColor  + ' ticket"><table><tr><td><p>' + TicketText 
         + '</p></td></tr></table><input type="checkbox" class="point" /></div>');
 
         return false;
