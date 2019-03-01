@@ -2,14 +2,14 @@
     background-color: rgb(255, 255, 255); /* Цвет фона веб-страницы */
     color: #757373; /* Цвет основного текста */
     width: 40%;
-    height: 8%;
+    height: 5%;
     margin-left : 29%;
     margin-bottom: 1%;
     bottom: 2px;
     position: fixed;
     font-family: Arial, Verdana, Sans-serif; /* Семейство шрифтов */
     font-size: 15px; /* Размер основного шрифта в пунктах */
-    
+    box-sizing: border-box;
     border-radius: 5px;
     vertical-align: bottom;
 }
@@ -52,29 +52,52 @@
 }
 button{
     float:right;
-    border-radius: 0px;
+    border-radius: 3px;
     border: 1px solid;
-    font: menu;
-    background-color: rgb(107, 194, 85);
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: rgb(73, 173, 132);
     color: white;
-    margin: 8px;
-    margin-top: 12px;
-    padding: 4px 7px 4px 6px;
+    box-sizing: border-box;
+    padding: 4px 14px 4px 14px;
+    position: relative;
+    float: right;
+    height:100%;
+    margin-left: 10px;
 
 }
+.footerContainer{
+    padding: 7px;
+    padding-left: 0;
+    float: right;
+    position: relative;
+    height: 100%;
+    width: 35%;
+    box-sizing: border-box;
+}
 input{
-    position: fixed;
+    box-sizing: border-box;
+    position: relative;
     float: left;
-    height: 45px;
     display: block;
     margin-top: 0px;
     border:0px;
-    padding-left: 5px;
-    width: 29%;
-    height: 8%;
+    padding-left: 5%;
+    border-radius: 5px 0 0 5px;
+    width: 60%;
+    height: 100%;
     font-family: Arial, Verdana, Sans-serif; /* Семейство шрифтов */
     font-size: 18px;
     color: #757373;
+}
+.color{
+    float: right;
+    margin-top: 5%;
+    width: 15px;
+    height: 15px;
+    border-radius: 3px;
+    margin-right: 5px;
+    position: relative;
+    box-sizing: border-box;
 }
 .ticket{
     color: #757373; /* Цвет основного текста */
@@ -88,15 +111,7 @@ input{
     height: 100px;
 
 }
-.color{
-    float: right;
-    margin-top: 15px;
-    width: 20px;
-    height: 20px;
-    border-radius: 3px;
-    margin-right: 5px;
-    position: relative;
-}
+
 .color1 {
     background-color: rgb(250, 141, 141);
 }
