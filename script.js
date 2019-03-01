@@ -1,4 +1,4 @@
-const white = "rgb(255, 255, 255)";
+const white = "rgb(212, 211, 211)";
 function buttonClick(e) {
     let TicketText = $("#enter").val().trim();
     if (TicketText === '') {
