@@ -5,6 +5,10 @@ $(document).ready(function () {
     $("button").click(function () {
 
         let TicketText = $("#enter").val();
+        if (TicketText==='') {
+            return false;
+        }
+        
         function getRandomInt(min, max) {
             // использование Math.round() даст неравномерное распределение!
             return Math
@@ -40,7 +44,7 @@ $(document).ready(function () {
         $("#container")
         .prepend('<div class="' + chooseColor  + ' ticket"><table><tr><td><p>' + TicketText 
         + '</p></td></tr></table><input type="checkbox" class="point" /></div>');
-
+        $('input').val('');
         return false;
     });
 

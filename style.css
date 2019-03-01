@@ -91,7 +91,7 @@ input{
 }
 .color{
     float: right;
-    margin-top: 5%;
+    margin-top: 4%;
     width: 15px;
     height: 15px;
     border-radius: 3px;
@@ -161,14 +161,12 @@ table{
 }
 td{
     margin-left: 5%;
-    
     vertical-align:middle; /* выравнивание текста по вертикали css*/
 }
 
 p{
     
     font-size: 20px; /* Размер основного шрифта в пунктах */
-    text-align: center;
     color: white;
 	vertical-align:middle;
 }
